@@ -1,0 +1,63 @@
+<div id="page">
+    <div id="cont1"  @slideInOut>
+        <div id="content1">
+            <h2>Sakura no Kaze - где встречаются меч и мечта</h2>
+        </div>
+            <img id="thimg" src="/3.jpg" alt="image">
+                <h2>Вступайте в наш клуб!</h2>
+                <a href="https://t.me/Sakura_No_Kaze_official">Вступить</a>
+    </div>
+    
+<div @PageAnimation>
+    <div id="maincont">
+    <h1>Смотреть Кровавый парень</h1>
+    <a routerLink = "/AnimePage"
+    routerLinkActive = "active"
+    [routerLinkActiveOptions]="{exact: true}"
+    >←Назад</a
+    >
+ <div id="seria" *ngIf="activeSeria === 'Seria1'">
+    <iframe src="https://kodik.info/seria/169606/6cb7bd8b69618e0fe44ad46d0eb89dc7/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ <div id="seria" *ngIf="activeSeria === 'Seria2'">
+    <iframe src="https://kodik.info/seria/169607/ddf4f2c7b1461e840439d3f7b9d1338f/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ <div id="seria" *ngIf="activeSeria === 'Seria3'">
+    <iframe src="https://kodik.info/seria/169608/48c10de189a0e47f4af459252c40bbb2/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ <div id="seria" *ngIf="activeSeria === 'Seria4'">
+    <iframe src="https://kodik.info/seria/169609/f21057624851a0bd146dc0e6a623a7ed/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ <div id="seria" *ngIf="activeSeria === 'Seria5'">
+    <iframe src="https://kodik.info/seria/169610/7d484359f28d990fe162486c88b9cd0b/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ <div id="seria" *ngIf="activeSeria === 'Seria6'">
+    <iframe src="https://kodik.info/seria/169611/57c1044736972537b8ea81bc2c003f8b/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ <div id="seria" *ngIf="activeSeria === 'Seria7'">
+    <iframe src="https://kodik.info/seria/169612/6da7994f1f93e7f4b02bda53152e6df2/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ <div id="seria" *ngIf="activeSeria === 'Seria8'">
+    <iframe src="https://kodik.info/seria/169613/91e554efd334b1c794c5932a2e053752/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ <div id="seria" *ngIf="activeSeria === 'Seria9'">
+    <iframe src="https://kodik.info/seria/169614/ddbc7ef1bcd2744dc327e67ba927df34/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ <div id="seria" *ngIf="activeSeria === 'Seria10'">
+    <iframe src="https://kodik.info/seria/169615/a7119ebaad8f5a9554383f331c769098/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ 
+<button (click)="showSeria('Seria1')" >серия 1</button>
+<button (click)="showSeria('Seria2')" >серия 2</button>
+<button (click)="showSeria('Seria3')" >серия 3</button>
+<button (click)="showSeria('Seria4')">серия 4</button>
+<button (click)="showSeria('Seria5')">серия 5</button>
+<button (click)="showSeria('Seria6')">серия 6</button>
+<button (click)="showSeria('Seria7')" >серия 7</button>
+<button (click)="showSeria('Seria8')" >серия 8</button>
+<button (click)="showSeria('Seria9')" >серия 9</button>
+<button (click)="showSeria('Seria10')" >серия 10</button>
+
+</div>
+</div>
+

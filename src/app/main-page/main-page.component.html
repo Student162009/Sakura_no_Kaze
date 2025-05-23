@@ -1,0 +1,53 @@
+<div id="page">
+<div id="cont1" @slideInOut>
+        <div id="content1">
+        <h2>✨ Sakura no Kaze — место, где природа встречает гармонию и вдохновение! 🌿</h2>
+    </div>
+        <img id="thimg" src="/3.jpg" alt="image">
+            <h2>Вступайте в наш клуб!</h2>
+          
+            <a href="https://t.me/Sakura_No_Kaze_official">Вступить</a>
+</div>
+
+<div @PageAnimation>
+<div id="maincont">
+<h1>Добро пожаловать на "Sakura no Kaze"!</h1>
+
+<a routerLink = "/MangaPage"
+    routerLinkActive = "active"
+    [routerLinkActiveOptions]="{exact: true}"
+    >Манга</a
+    >
+    <a routerLink = "/AnimePage"
+    routerLinkActive = "active"
+    [routerLinkActiveOptions]="{exact: true}"
+    >Аниме</a
+    >
+    <a routerLink = "/MusicPage"
+    routerLinkActive = "active"
+    [routerLinkActiveOptions]="{exact: true}"
+    >Музыка</a
+    >
+    <a routerLink = "/WallpapersPage"
+    routerLinkActive = "active"
+    [routerLinkActiveOptions]="{exact: true}"
+    >Обои</a
+    >
+
+<div id="imgcont">
+    <img id="mainimg1" src="/1.jpg" alt="image">
+    <img id="mainimg2"src="/2.jpg" alt="image">
+</div>
+
+<p>Добро пожаловать на Sakura no Kaze, где дух самураев встречает мир аниме! 
+    Здесь вы сможете погрузиться в захватывающие приключения, наслаждаться 
+    музыкой и скачивать уникальные обои, которые наполнят ваше сердце восторгом. 
+    Пусть ветер сакуры унесет вас в мир фантазий и вдохновения!</p>
+    <h1>Рекламный видеоролик Sakura no Kaze</h1>
+    <iframe  src="https://www.youtube.com/embed/cIb9bWHtma8?si=9dDu8rb6sGBylMCv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</div>
+<div id="cont2"  @slideInOut>
+    <h2>{{fraza | fraza}}</h2>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+<div id="page">
+  <div id="cont1" @slideInOut>
+    <div id="content1">
+      <div id="auth">
+        <h1 *ngIf="error">{{ error }}</h1>
+        <h1 *ngIf="regmes">{{ regmes }}</h1>
+        <h1>Регистрация</h1>
+        <input
+          type="text"
+          id="loginreg"
+          [(ngModel)]="login"
+          placeholder="Логин:"
+        />
+        <input
+          type="text"
+          id="passwordreg1"
+          [(ngModel)]="parol"
+          placeholder="Пароль:"
+          autocomplete="off"
+          autocorrect="off"
+        />
+        <input
+          type="text"
+          id="passwordreg2"
+          [(ngModel)]="controlpassword"
+          placeholder="Повторите пароль:"
+          autocomplete="off"
+          autocorrect="off"
+        />
+        <button (click)="reg()">Регистрация</button>
+      </div>
+      <div id="auth">
+        <h1>Вход</h1>
+        <input
+          type="text"
+          id="login"
+          [(ngModel)]="login1"
+          placeholder="Логин:"
+        />
+        <input
+          type="text"
+          id="password"
+          [(ngModel)]="parol1"
+          placeholder="Пароль:"
+          autocomplete="off"
+          autocorrect="off"
+        />
+        <button (click)="enter()">Вход</button>
+      </div>
+      </div>
+  </div>
+</div>

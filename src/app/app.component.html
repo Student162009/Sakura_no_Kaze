@@ -1,0 +1,86 @@
+<header *ngIf="router.url != '/'" >
+  <nav id="container" @listAnimation>
+    <h1 id="namesite">🌸 Sakura no Kaze 🍃</h1>
+    <img src="/лого.jpg" alt="🎌 Логотип" />
+    <ul id="menu">
+      <li>
+        <a
+          routerLink="/Main"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          ⛩️ Главная
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/MangaPage"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          📖 Манга
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/AnimePage"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          🎥 Аниме
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/MusicPage"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          🎶 Музыка
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/WallpapersPage"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          🖼️ Обои
+        </a> 
+      </li>
+      <li>
+        <a routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }" (click) = "out()">
+         Выход
+      </a>
+      </li>
+      
+    </ul> 
+   
+  </nav>
+</header>
+
+<main [@routeAnimations]>
+  <router-outlet></router-outlet>
+</main>
+
+<footer *ngIf="router.url != '/'">
+  <h5 id="Stih">
+    Сакура в мраке расцветает,<br />
+    Светом нежным ночь играет.<br />
+    В каждом лепестке тает сказка -<br />
+    Жизни краткая, но прекрасна.
+  </h5>
+  <div> <a href="https://www.instagram.com/sakura.no.kaze.official/">
+    <img  id = "sot" src="/insta.png" alt="Иконка Instagram" >
+  </a>
+  <a href="https://youtube.com/@sakuranokaze.official?si=bJTiAToLAglX92Sj">
+    <img  id = "sot" src="/ютуб.png" alt="Иконка YouTube канала">
+</a>
+<a href="https://t.me/Sakura_No_Kaze_official">
+  <img  id = "sot" src="/tg.png" alt="Иконка Telegram" >
+</a></div>
+ 
+  <h5>©Made by Koei Ritsuma, Minsk 2025</h5>
+</footer>

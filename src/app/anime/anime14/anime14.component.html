@@ -1,0 +1,70 @@
+<div id="page">
+    <div id="cont1"  @slideInOut>
+        <div id="content1">
+            <h2>Sakura no Kaze - где встречаются меч и мечта</h2>
+        </div>
+            <img id="thimg" src="/3.jpg" alt="image">
+                <h2>Вступайте в наш клуб!</h2>
+                <a href="https://t.me/Sakura_No_Kaze_official">Вступить</a>
+    </div>
+    
+<div @PageAnimation>
+    <div id="maincont">
+    <h1>Смотреть Ванпанчмен</h1>
+    <a routerLink = "/AnimePage"
+    routerLinkActive = "active"
+    [routerLinkActiveOptions]="{exact: true}"
+    >←Назад</a
+    >
+ <div id="seria" *ngIf="activeSeria === 'Seria1'">
+    <iframe src="https://kodik.info/seria/143759/522f46770293cb839470d09411d3057b/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ <div id="seria" *ngIf="activeSeria === 'Seria2'">
+    <iframe src="https://kodik.info/seria/143760/fadbd05249121288862b3b9c80d323f3/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ <div id="seria" *ngIf="activeSeria === 'Seria3'">
+    <iframe src="https://kodik.info/seria/143761/709f6177bd7bcd2cfcbaced698bf0698/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ <div id="seria" *ngIf="activeSeria === 'Seria4'">
+    <iframe src="https://kodik.info/seria/143762/aff7fd6ef906b1fcaa93f97c6c5db495/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ <div id="seria" *ngIf="activeSeria === 'Seria5'">
+    <iframe src="https://kodik.info/seria/143763/1d9a0e3b5372fd919df6b788eb3f7c57/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ <div id="seria" *ngIf="activeSeria === 'Seria6'">
+    <iframe src="https://kodik.info/seria/143764/2abf3d62f4212e9686a7b53b132ee8e3/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ <div id="seria" *ngIf="activeSeria === 'Seria7'">
+    <iframe src="https://kodik.info/seria/143765/e9aeb4d3c237abe8ff13cb89eeb05964/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ <div id="seria" *ngIf="activeSeria === 'Seria8'">
+    <iframe src="https://kodik.info/seria/143766/70938949fbf60ba672925b4c4f097809/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ <div id="seria" *ngIf="activeSeria === 'Seria9'">
+    <iframe src="https://kodik.info/seria/143767/117dd30a48bb222f65a99481d1fbaf6a/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ <div id="seria" *ngIf="activeSeria === 'Seria10'">
+    <iframe src="https://kodik.info/seria/143768/8c5a5556f04712a721c7ec33cb1561c3/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ <div id="seria" *ngIf="activeSeria === 'Seria11'">
+    <iframe src="https://kodik.info/seria/143769/36ce3dddd10f32b1661a11270df62e9f/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ <div id="seria" *ngIf="activeSeria === 'Seria12'">
+    <iframe src="https://kodik.info/seria/143770/936a430f0b4e9c2c7fa91ecdeeff1a3e/720p" width="607" height="360" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+ </div>
+ 
+<button (click)="showSeria('Seria1')" >серия 1</button>
+<button (click)="showSeria('Seria2')" >серия 2</button>
+<button (click)="showSeria('Seria3')" >серия 3</button>
+<button (click)="showSeria('Seria4')">серия 4</button>
+<button (click)="showSeria('Seria5')">серия 5</button>
+<button (click)="showSeria('Seria6')">серия 6</button>
+<button (click)="showSeria('Seria7')" >серия 7</button>
+<button (click)="showSeria('Seria8')" >серия 8</button>
+<button (click)="showSeria('Seria9')" >серия 9</button>
+<button (click)="showSeria('Seria10')" >серия 10</button>
+<button (click)="showSeria('Seria11')" >серия 11</button>
+<button (click)="showSeria('Seria12')" >серия 12</button>
+    </div>
+</div>
+

@@ -1,0 +1,69 @@
+<div id="page">
+  <div id="cont1"  [class.smart]="smart" @slideInOut>
+    <button id="sortbut" (click) = "IfSort()">{{ smart ? 'Скрыть сортировку' : 'Показать сортировку' }}</button>
+    <h1 id="Letsgo">Давайте слушать музыку!</h1>
+    <h2>Поиск:</h2>
+    <div id="search">
+      <input id="searchin" type="text" placeholder="Поиск..." [(ngModel)]="search" (keyup.enter)="searchMusic()"  
+      (focus)="Focus()"
+      (blur)="Blur()"
+      autocomplete="off"
+      autocorrect="off"/>
+      <button id="searchbut" (click)="searchMusic()">Найти</button>
+    </div>
+    
+    <div [class.visible]="searchVisible && searchHistory.length > 0" class="search-history">
+        <h3>История поиска</h3>
+        <ul>
+          <li *ngFor="let item of searchHistory" (click)="HistoryClick(item)" style="cursor: pointer;">
+            {{ item }}
+          </li>
+        </ul>
+        <button (click)="clearHistory()">Очистить историю</button>
+      </div>       
+
+    <h3>Отсортировать по:</h3>
+    <button (click)="showAll()">Сбросить фильтр</button>
+    <div id="sort"><h4>Категории:</h4>
+    <button (click)="filterCategory('Lo-Fi')" [class.active]="activeCategory === 'Lo-Fi'">Lo-Fi</button>
+    <button (click)="filterCategory('Cover')" [class.active]="activeCategory === 'Cover'">Cover</button>
+    <button (click)="filterCategory('Песня')" [class.active]="activeCategory === 'Песня'">Песня</button>
+
+    </div>
+</div>
+  
+<div @PageAnimation>
+  <div id="maincont">
+  <h1>Слушать музыку</h1>
+  <button id="sortbut" (click) = "IfSort()">{{ smart ? 'Скрыть сортировку' : 'Показать сортировку' }}</button>
+  <div class="Music">
+<h2>Lo-Fi Girl asian radio</h2>
+<iframe width="766" height="430" src="https://www.youtube.com/embed/Na0w3Mz46GA" title="asian lofi radio ⛩️ beats to relax/study to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  </div>
+  <div *ngFor="let item of filteredMusic" class="music">
+    <div class="name">
+        <h2>{{ item.name }} </h2>
+        <h3>Автор: {{item.author}}</h3>
+        <h3>Категория: {{item.category}}</h3>
+        <button (click)="Play(item.music)">
+          <i class="material-icons ">play_arrow</i>
+        </button>
+        
+        <button (click)="Pause()">
+          <i class="material-icons">stop</i>
+        </button>
+        
+        <a id="download" [href]="item.music" download>
+          <i class="material-icons">file_download</i>
+        </a>        
+    </div>
+</div>  
+  </div>
+  </div>
+
+  <div id="cont2"  @slideInOut>
+    <h2>{{fraza | fraza}}</h2>
+    </div>
+
+</div>

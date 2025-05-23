@@ -1,0 +1,31 @@
+<div id="page">
+  <div id="cont1"  [class.smart]="smart"  @slideInOut>
+    <button id="sortbut" (click) = "IfSort()">{{ smart ? 'Скрыть сортировку' : 'Показать сортировку' }}</button>
+    <h1 id="Letsgo">Давайте ставить обои!</h1> 
+
+    <h3>Отсортировать по:</h3>
+    <button (click)="showAll()">Сбросить фильтр</button>
+    <div id="sort"><h4>Устройство:</h4>
+    <button (click)="filterCategory('Телефон')" [class.active]="activeCategory === 'Телефон'">Телефон</button>
+    <button (click)="filterCategory('ПК')" [class.active]="activeCategory === 'ПК'">ПК</button>
+    </div>
+</div>
+  
+<div @PageAnimation>
+  <div id="maincont">
+  <h1>Cкачать обои</h1>
+  <button id="sortbut" (click) = "IfSort()">{{ smart ? 'Скрыть сортировку' : 'Показать сортировку' }}</button>
+  <div *ngFor="let item of filteredWallpapers" class="wallpapers">
+    <img [src]="item.image" alt="item.name">
+    <div class="name">
+        <h2>{{ item.name }} </h2>
+        <h3>Категория: {{item.category}}</h3>
+    </div>
+    <a id="download" [href] = "item.image">Скачать</a>
+</div>  
+  </div>
+  </div>
+  <div id="cont2"  @slideInOut>
+    <h2>{{fraza | fraza}}</h2>
+    </div>
+</div>

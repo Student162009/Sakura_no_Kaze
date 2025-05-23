@@ -1,0 +1,76 @@
+<div id="page">
+    <div id="cont1" [class.smart]="smart"  @slideInOut>
+      <button id="sortbut" (click) = "IfSort()">{{ smart ? 'Скрыть сортировку' : 'Показать сортировку' }}</button>
+          <h1 id="Letsgo">Давайте смотреть аниме!</h1>
+          <h2>Поиск:</h2>
+          <div id="search">
+            <input id="searchin" type="text" placeholder="Поиск..." [(ngModel)]="search" 
+            (keyup.enter)="searchAnime()"
+            (focus)="Focus()"
+            (blur)="Blur()"
+            autocomplete="off"
+            autocorrect="off"/>
+            <button id="searchbut" (click)="searchAnime()">Найти</button>
+          </div>
+
+          <div [class.visible]="searchVisible && searchHistory.length > 0" class="search-history">
+            <h3>История поиска</h3>
+            <ul>
+              <li *ngFor="let item of searchHistory" (click)="HistoryClick(item)" style="cursor: pointer;">
+                {{ item }}
+              </li>
+            </ul>
+            <button (click)="clearHistory()">Очистить историю</button>
+          </div>       
+
+          <h3>Отсортировать по:</h3>
+          <button (click)="showAll()">Сбросить фильтр</button>
+          <div id="sort"><h4>Году выпуска:</h4>
+          <button (click)="filterYear(2012, 2015)" [class.active]="activeYear === '2012-2015'">2012–2015</button>
+          <button (click)="filterYear(2016, 2020)" [class.active]="activeYear === '2016-2020'">2016–2020</button>
+          <button (click)="filterYear(2021, 2025)" [class.active]="activeYear === '2021-2025'">2021–2025</button>
+            <h4>Возрастное ограничение:</h4>
+          <button (click)="filterAge(14)" [class.active]="activeAge === '14'">14+</button>
+          <button (click)="filterAge(16)" [class.active]="activeAge === '16'">16+</button>
+          <button (click)="filterAge(18)" [class.active]="activeAge === '18'">18+</button>
+            <h4>Рейтинг:</h4>
+          <button (click)="filterRating(4.5, 5)" [class.active]="activeRating === '4.5-5'">5★</button>
+          <button (click)="filterRating(3.5, 4.4)" [class.active]="activeRating === '3.5-4.4'">4★</button>
+          <button (click)="filterRating(2.5, 3.4)" [class.active]="activeRating === '2.5-3.4'">3★</button>
+          </div>
+          
+    </div>
+    
+<div @PageAnimation>
+    <div id="maincont">
+    <h1>Смотреть Аниме</h1>
+    <button id="sortbut" (click) = "IfSort()">{{ smart ? 'Скрыть сортировку' : 'Показать сортировку' }}</button>
+    <div *ngFor="let item of filteredAnime" class="anime">
+      <div class="image-container">
+          <div class="image">
+              <img [src]="item.image" alt="item.name">
+              <div class="stat">
+                  <h3>Возрастное ограничение: {{ item.age }}+</h3>
+                  <p id="stars">Рейтинг: {{ item.rating | rating }} {{item.rating }}</p>
+                  <a routerLink = {{item.link}}
+                  routerLinkActive = "active"
+                  [routerLinkActiveOptions]="{exact: true}"
+                  id="watch"
+                  >Cмотреть►</a>
+              </div>
+          </div>
+      </div>
+      
+      <div class="name">
+          <h2>{{ item.name }} </h2>
+          <h3>Год выпуска: {{item.year}}</h3>
+          <p>{{ item.descript }}</p>
+      </div>
+      
+  </div>  
+    </div>
+    </div>
+    <div id="cont2"  @slideInOut>
+      <h2>{{fraza | fraza}}</h2>
+      </div>
+</div>

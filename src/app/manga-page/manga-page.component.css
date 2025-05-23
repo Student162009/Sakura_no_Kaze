@@ -1,0 +1,349 @@
+#cont1 {
+    background-color: #262626;
+    height: 900px;
+    width: 400px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+}
+
+#Letsgo{
+    font-size: 35px;
+}
+
+#cont2 {
+    background-color: #262626;
+    height: 360px;
+    width: 400px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFE;
+    margin-top: 30px;
+    font-size: large;
+    margin-right: 20px;
+}
+
+.search-history {
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    right: 15px;
+    max-height: 250px;
+    max-width: 500px;
+    overflow-y: auto;
+    border-radius: 15px;
+    background-color: #303030;
+    z-index: 100;
+    transition: 0.5s linear;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFE;
+    padding: 10px 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+    overflow: auto;
+  }
+
+
+
+  .search-history.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  
+  .search-history ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 15px;
+  }
+  
+  .search-history li {
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .search-history li:hover {
+    background-color: #B497BD;
+    color: #4B2C58;
+    border-radius: 10px;
+  }
+  
+  .search-history button {
+    margin: 10px auto 0 auto;
+    display: block;
+    background-color: #E91E63;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-size: 16px;
+    color: #FFFFFE;
+    cursor: pointer;
+    transition: 0.5s linear;
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+  
+  .search-history button:hover {
+    background-color: #B497BD;
+    color: #4B2C58;
+  }
+  
+  #search {
+    position: relative;
+  }
+
+#search {
+    border-radius: 35px;
+    border: 2px solid #E91E63;
+    background-color: #E91E63;
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+    width: 95%;
+    animation: glow 1.5s ease-in-out infinite alternate;
+    transition: 0.5s linear;
+}
+
+#searchin {
+    background-color: transparent;
+    border: none;
+    color: #FFFFFE;
+    outline: none;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    flex: 1;
+    max-width: 200px;
+    transition: 0.5s linear;
+}
+
+#searchin::placeholder {
+    color: #FFFFFE;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    opacity: 0.8;
+    transition: 0.5s linear;
+}
+
+#search:hover #searchin:not(:focus) {
+    color: #4B2C58;
+}
+
+#search:hover #searchin:not(:focus)::placeholder {
+    color: #4B2C58;
+    opacity: 1;
+}
+
+#searchin:focus {
+    color: #4B2C58;
+}
+
+#searchin:focus::placeholder {
+    color: #4B2C58;
+    opacity: 1;
+}
+
+button#searchbut {
+    background-color: transparent;
+    border: none;
+    color: #FFFFFE;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    animation: none;
+    padding: 0 10px;
+    transition: 0.5s linear;
+}
+
+button#searchbut:hover {
+    color: #4B2C58;
+}
+
+button.active {
+    background-color: #B497BD;
+    color: #4B2C58;
+    animation: none; 
+  }
+  
+
+#search:hover {
+    background-color: #B497BD;
+    border-color: #B497BD;
+}
+
+h1, h2{
+    padding: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+#page{
+    display: flex;
+}
+
+h1{
+    font-size: 45px;
+}
+
+
+p{
+    font-size: 22px;
+}
+
+#stars{
+    font-size: 20px;
+}
+
+button{
+    background-color:#E91E63;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color:#FFFFFE;
+    margin: 10px;
+    border-radius: 30px;
+    animation: glow 1.5s ease-in-out infinite alternate;
+    transition: 0.5s linear;
+}
+
+button:hover{
+    background-color: #B497BD;
+    color: #4B2C58;
+}
+
+a#read{
+    background-color:#E91E63;
+    font-size: 25px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color:#FFFFFE;
+    margin: 10px;
+    border-radius: 30px;
+    animation: glow 1.5s ease-in-out infinite alternate;
+    transition: 0.5s linear;
+}
+
+a#read:hover{
+    background-color: #B497BD;
+    color: #4B2C58;
+}
+
+#maincont {
+    background-color: #262626;
+    height: auto;
+    width: 830px;
+    margin-left: 40px;
+    text-align: center;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.manga{
+    background-color: #303030;
+    height: auto;
+    width: 800px;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+}
+
+@keyframes glow {
+    from {
+      box-shadow: 0 0 5px #fff, 0 0 10px #B497BD;
+    }
+    to {
+      box-shadow: 0 0 10px #fff, 0 0 20px #B497BD;
+    }
+   }
+   
+
+.image-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.image {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 15px;
+}
+
+.stat {
+    margin-top: 10px; 
+    text-align: center; 
+}
+
+img {
+    border-radius: 20px;
+    margin-bottom: 10px;
+    width: 188px;
+    height: 268px; 
+}
+
+#sortbut {
+    display: none;
+}
+
+@media (max-width: 740px) {
+    #cont1 {
+    display: none;
+    }
+
+    #cont2 {
+    display: none;
+    }
+
+    #maincont {
+        width: 415px;
+        margin-left: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .manga {
+        height: auto;
+        width: 400px;
+        margin: 10px;
+    }
+    img {
+        width: 94px;
+        height: 134px; 
+    }
+    
+    h1{
+        font-size: 22.5px;
+    }
+    
+    p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: medium;
+    }
+
+    a{
+        font-size: 15px;
+    }
+
+    #sortbut{
+display: block;
+    }
+
+    #cont1.smart{
+display: flex;
+    }
+}

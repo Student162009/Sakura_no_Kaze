@@ -1,0 +1,76 @@
+body {
+    background-image: url("/фон.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, p{
+    color:#FFFFFE;
+}
+
+#sakura-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+  @keyframes fallSway {
+    0% {
+      transform: translateX(5px) translateY(-10%) rotate(0deg);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(-5px) translateY(50vh) rotate(180deg);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(5px) translateY(100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  .sakura-petal {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url('/sakura.png') no-repeat center/contain;
+    opacity: 0.8;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: fallSway;
+  }
+  
+  .sakura-petal:nth-child(1)  { left: 5%;  animation-duration: 6s;  animation-delay: 0s;  }
+  .sakura-petal:nth-child(2)  { left: 10%; animation-duration: 7s;  animation-delay: 1s;  }
+  .sakura-petal:nth-child(3)  { left: 15%; animation-duration: 8s;  animation-delay: 2s;  }
+  .sakura-petal:nth-child(4)  { left: 20%; animation-duration: 9s;  animation-delay: 3s;  }
+  .sakura-petal:nth-child(5)  { left: 25%; animation-duration: 10s; animation-delay: 4s;  }
+  .sakura-petal:nth-child(6)  { left: 30%; animation-duration: 7.5s;animation-delay: 0.5s;}
+  .sakura-petal:nth-child(7)  { left: 35%; animation-duration: 8.5s;animation-delay: 1.5s;}
+  .sakura-petal:nth-child(8)  { left: 40%; animation-duration: 9.5s;animation-delay: 2.5s;}
+  .sakura-petal:nth-child(9)  { left: 45%; animation-duration: 10.5s;animation-delay: 3.5s;}
+  .sakura-petal:nth-child(10) { left: 50%; animation-duration: 6.5s; animation-delay: 4.5s;}
+  .sakura-petal:nth-child(11) { left: 55%; animation-duration: 7.2s; animation-delay: 0.7s;}
+  .sakura-petal:nth-child(12) { left: 60%; animation-duration: 8.3s; animation-delay: 1.7s;}
+  .sakura-petal:nth-child(13) { left: 65%; animation-duration: 9.1s; animation-delay: 2.7s;}
+  .sakura-petal:nth-child(14) { left: 70%; animation-duration: 10.2s;animation-delay: 3.7s;}
+  .sakura-petal:nth-child(15) { left: 75%; animation-duration: 7.8s; animation-delay: 4.7s;}
+  .sakura-petal:nth-child(16) { left: 80%; animation-duration: 8.6s; animation-delay: 0.9s;}
+  .sakura-petal:nth-child(17) { left: 85%; animation-duration: 9.7s; animation-delay: 1.9s;}
+  .sakura-petal:nth-child(18) { left: 90%; animation-duration: 10.8s;animation-delay: 2.9s;}
+  .sakura-petal:nth-child(19) { left: 95%; animation-duration: 6.9s; animation-delay: 3.9s;}
+  .sakura-petal:nth-child(20) { left: 98%; animation-duration: 7.4s; animation-delay: 4.9s;}
+  
+
+  img {
+    pointer-events: none;
+    user-select: none;
+  }
+  
