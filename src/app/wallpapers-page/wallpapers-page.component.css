@@ -150,51 +150,52 @@ img {
     }
   
     #maincont {
-      width: 415px;
-      margin-left: 10px;
-      margin-right: 10px;
-      border-radius: 10px;
-      margin-bottom: 10px;
+      width: 373.5px;
+      margin-left: 9px;
+      margin-right: 9px;
+      border-radius: 9px;
+      margin-bottom: 9px;
     }
   
     .wallpapers {
-      width: 400px;
-      margin: 10px;
-      border-radius: 10px;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      width: 360px;
+      margin: 9px;
+      border-radius: 9px;
+      padding-top: 13.5px;
+      padding-bottom: 13.5px;
     }
   
     img {
       max-width: 100%;
       max-height: auto;
-      border-radius: 15px;
+      border-radius: 13.5px;
     }
   
     h1 {
-      font-size: 22.5px;
+      font-size: 20.25px;
     }
   
     h2, h3 {
-      font-size: 16px;
+      font-size: 14.4px;
     }
   
     button, a {
-        font-size: 18px;
-        margin: 8px;
-        padding: 8px;
-        border-radius: 25px;
+      font-size: 16.2px;
+      margin: 7.2px;
+      padding: 7.2px;
+      border-radius: 22.5px;
     }
-
+  
     #sortbut {
-        display: block;
+      display: block;
     }
-
+  
     #cont1.smart {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 600px;
-      }
-  }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 540px;
+    }
+}
+
   

@@ -291,24 +291,24 @@ iframe{
     }
   
     #maincont {
-      width: 415px;
-      margin-left: 10px;
-      margin-right: 10px;
-      border-radius: 10px;
-      margin-bottom: 10px;
+      width: 373.5px;
+      margin-left: 9px;
+      margin-right: 9px;
+      border-radius: 9px;
+      margin-bottom: 9px;
     }
   
     .Music {
-      width: 400px;
-      margin: 10px;
-      border-radius: 10px;
-      padding-bottom: 10px;
+      width: 360px;
+      margin: 9px;
+      border-radius: 9px;
+      padding-bottom: 9px;
     }
   
     .music {
-      width: 400px;
-      margin: 10px;
-      border-radius: 10px;
+      width: 360px;
+      margin: 9px;
+      border-radius: 9px;
       display: flex;
       justify-content: center;
     }
@@ -317,15 +317,15 @@ iframe{
       width: 100%;
       height: auto;
       aspect-ratio: 16 / 9;
-      border-radius: 15px;
+      border-radius: 13.5px;
     }
   
     h1 {
-      font-size: 22.5px;
+      font-size: 20.25px;
     }
   
     h2, h3 {
-      font-size: 16px;
+      font-size: 14.4px;
     }
   
     p {
@@ -334,10 +334,10 @@ iframe{
     }
   
     button, a#download, i {
-      font-size: 18px;
-      margin: 8px;
-      padding: 8px;
-      border-radius: 25px;
+      font-size: 16.2px;
+      margin: 7.2px;
+      padding: 7.2px;
+      border-radius: 22.5px;
     }
   
     #sortbut {
@@ -349,8 +349,8 @@ iframe{
       flex-direction: column;
       align-items: center;
     }
-  }
-  
+}
+
 
 
 

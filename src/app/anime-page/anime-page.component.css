@@ -328,37 +328,33 @@ img {
     }
 
     #maincont {
-        width: 415px;
-        margin-left: 10px;
-        border-radius: 10px;
-        margin-bottom: 10px;
+        width: 393.5px;
+        margin-left: 9px;
+        border-radius: 9px;
+        margin-bottom: 9px;
     }
     .anime {
         height: auto;
-        width: 400px;
-        margin: 10px;
+        width: 380px;
+        margin: 9px;
     }
     img {
-        width: 94px;
-        height: 134px; 
+        width: 84.6px;
+        height: 120.6px;
+    }
+    h1 {
+        font-size: 20.25px;
+    }
+    p {
+        font-size: 12.4px;
+    }
+    a {
+        font-size: 13.5px;
+    }
+    #sortbut {
+        display: block;
     }
     
-    h1{
-        font-size: 22.5px;
-    }
-    
-    p{
-        font-family: 'Montserrat', sans-serif;
-        font-size: medium;
-    }
-
-    a{
-        font-size: 15px;
-    }
-
-    #sortbut{
-display: block;
-    }
 
     #cont1.smart{
 display: flex;

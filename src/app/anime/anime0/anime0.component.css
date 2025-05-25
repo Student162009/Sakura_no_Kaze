@@ -97,28 +97,26 @@ button:hover{
 
 @media (max-width: 740px) {
     #cont1 {
-    display: none;
+        display: none;
     }
-
-    
 
     #maincont {
-        width: 415px;
-        margin-left: 10px;
-        border-radius: 10px;
-        margin-bottom: 10px;
+        width: 373.5px;
+        margin-left: 9px;
+        border-radius: 9px;
+        margin-bottom: 9px;
     }
     
-    h1{
-        font-size: 22.5px;
+    h1 {
+        font-size: 20.25px;
     }
     
-    iframe{
-        width: 364px;
-        height: 205px
+    iframe {
+        width: 327.6px;
+        height: 184.5px;
     }
 
-    button,a{
-        font-size: 15px;
+    button, a {
+        font-size: 13.5px;
     }
 }
