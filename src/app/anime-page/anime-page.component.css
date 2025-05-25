@@ -328,14 +328,14 @@ img {
     }
 
     #maincont {
-        width: 391.5px;
+        width: 389.5px;
         margin-left: 0;
         border-radius: 9px;
         margin-bottom: 9px;
     }
     .anime {
         height: auto;
-        width: 378px;
+        width: 376px;
         margin: 9px;
     }
     img {
@@ -346,7 +346,7 @@ img {
         font-size: 20.25px;
     }
     p {
-        font-size: 12px;
+        font-size: 10px;
     }
     a {
         font-size: 13.5px;
