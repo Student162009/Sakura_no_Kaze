@@ -94,6 +94,10 @@ footer{
   height: 12vh;
 }
 
+#secret{
+  color: #0b1116;
+}
+
 router-outlet ~ * {
   display: block;
   width: 100%;

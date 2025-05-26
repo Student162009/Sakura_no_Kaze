@@ -9,6 +9,7 @@ import { AnimePageComponent } from './anime-page/anime-page.component';
 import { MusicPageComponent } from './music-page/music-page.component';
 import { WallpapersPageComponent } from './wallpapers-page/wallpapers-page.component';
 import { Error401Component } from './error401/error401.component';
+import { SecretListComponent } from './secret-list/secret-list.component';
 
 import { Anime0Component } from './anime/anime0/anime0.component';
 import { Anime1Component } from './anime/anime1/anime1.component';
@@ -56,6 +57,7 @@ export const routes: Routes = [
     component: WallpapersPageComponent,
     canActivate: [AuthGuard],
   },
+  { path: 'Secretik', component: SecretListComponent, canActivate:[AuthGuard]},
   { path: 'Anime0', component: Anime0Component, canActivate: [AuthGuard] },
   { path: 'Anime1', component: Anime1Component, canActivate: [AuthGuard] },
   { path: 'Anime2', component: Anime2Component, canActivate: [AuthGuard] },
