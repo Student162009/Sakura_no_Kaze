@@ -303,47 +303,47 @@ img {
 
 @media (max-width: 740px) {
     #cont1 {
-        display: none;
+    display: none;
     }
 
     #cont2 {
-        display: none;
+    display: none;
     }
 
     #maincont {
-        width: 391.5px;
-        margin-left: 0px;
-        border-radius: 9px;
-        margin-bottom: 9px;
+        width: 415px;
+        margin-left: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
     }
     .manga {
         height: auto;
-        width: 378px;
-        margin: 9px;
+        width: 400px;
+        margin: 10px;
     }
     img {
-        width: 84.6px;
-        height: 120.6px;
+        width: 94px;
+        height: 134px; 
     }
     
-    h1 {
-        font-size: 16.25px;
+    h1{
+        font-size: 22.5px;
     }
     
-    p {
+    p{
         font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
+        font-size: medium;
     }
 
-    a {
-        font-size: 13.5px;
+    a{
+        font-size: 15px;
     }
 
-    #sortbut {
-        display: block;
+    #sortbut{
+display: block;
     }
 
-    #cont1.smart {
-        display: flex;
+    #cont1.smart{
+display: flex;
     }
-}
+} 
