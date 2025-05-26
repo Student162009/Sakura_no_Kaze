@@ -48,7 +48,8 @@ export class EnterComponent {
   constructor(private router: Router) {}
 
   reg() {
-    if (this.controlpassword == this.parol) {
+    if(this.login.length>0  || this.parol.length>0 ){
+      if (this.controlpassword == this.parol) {
       localStorage.setItem('login', this.login);
       localStorage.setItem('parol', this.parol);
       this.error = '';
@@ -56,9 +57,13 @@ export class EnterComponent {
       this.error = 'Пароли не совпадают';
     }
     this.regmes = 'Успешно зарегестрированно';
+  }else{
+    this.error = 'Проверьте данные';
+  }
+    
   }
   enter() {
-   if (this.login == this.login1 && this.parol == this.parol1) {
+   if (this.login == this.login1 &&this.login.length>0 && this.parol == this.parol1 &&this.parol.length>0) {
       localStorage.setItem('isAuthenticated', 'true');
 
       this.router.navigate(['/Main']);

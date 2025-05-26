@@ -28,7 +28,7 @@ img{
   border-radius: 55px;
 }
 header{
-  background-image: url('/фон2.jpg');
+  background-image: url('/фон5.png');
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;
@@ -36,7 +36,7 @@ header{
   
 }
 #menu{
-  background-color: #221C35;
+  background-color: #262626;
   display: flex;
   width: auto;
   justify-content: center;
@@ -45,7 +45,7 @@ header{
 
 
 a{
-  color:#B497BD;
+  color:#E91E63;
   font-size: 30px;
   font-family: 'Courier New', Courier, monospace;
   text-decoration: none;
@@ -84,7 +84,7 @@ ul {
   
 }
 footer{
-  background-image: url('/фон3.png');
+  background-image: url('/фон6.png');
   display: flex;
   justify-content: right;
   padding-right: 60px;
@@ -103,10 +103,15 @@ router-outlet ~ * {
 @media (max-width: 740px) {
   header {
     padding: 0;
-    width: 100vh;
+    background-image: url('/фон2.jpg');
+  }
+
+  a{
+    color:#B497BD;
   }
 
 h1{
+
   color: forestgreen;
 }
 
@@ -118,7 +123,7 @@ h1{
   }
 
   #namesite {
-    font-size: 20px;
+    font-size: 35px;
     margin: 10px 0 6px 10px;
     text-align: left;
     word-break: break-word;
@@ -127,6 +132,7 @@ h1{
 
   #menu {
     flex-direction: column;
+    background-color: #221C35;
     align-items: flex-start;
     width: 100%;
     border-radius: 0;
@@ -177,7 +183,7 @@ h1{
   text-align: center;
     padding: 16px 10px;
     font-size: 13px;
-    width: 100vh;
+    background-image: url('/фон3.png');
   }
   #sot{
     width:20px;
