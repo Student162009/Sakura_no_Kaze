@@ -28,7 +28,11 @@ const namesarr = [
     "風",
     "別れ",
     "Катюша",
-    "ミライチズ"
+    "ミライチズ",
+    "IDOL",
+    "Tokyo Autumn Session",
+    "Ruler of my heart",
+    "AiScReam"
 ];
 
 const authors = [
@@ -61,7 +65,11 @@ const authors = [
     "Hatsune Miku",
     "yoru no hitowarai",
     "Девочки и танки",
-    "yoru no hitowarai"
+    "yoru no hitowarai",
+    "YOASOBI",
+    "Jackie-O feat. Sabi-tyan",
+    "Melody Note, Kirio",
+    "AiScReam"
 ];
 
  const categorys = [
@@ -94,6 +102,10 @@ const authors = [
   "Песня",
   "Песня",
   "Песня",
+  "Песня",
+  "Песня",
+  "Cover",
+  "Cover",
   "Песня"
 ];
 export{

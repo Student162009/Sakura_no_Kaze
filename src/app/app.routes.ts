@@ -32,6 +32,10 @@ import { Anime17Component } from './anime/anime17/anime17.component';
 import { Anime18Component } from './anime/anime18/anime18.component';
 import { Anime19Component } from './anime/anime19/anime19.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { Error404funComponent } from './error404fun/error404fun.component';
+import { CodeComponent } from './code/code.component';
+import { GojoSecretComponent } from './gojo-secret/gojo-secret.component';
+import { message } from './rand404';
 
 export const routes: Routes = [
   { path: '', component: EnterComponent },
@@ -78,9 +82,12 @@ export const routes: Routes = [
   { path: 'Anime17', component: Anime17Component, canActivate: [AuthGuard] },
   { path: 'Anime18', component: Anime18Component, canActivate: [AuthGuard] },
   { path: 'Anime19', component: Anime19Component, canActivate: [AuthGuard] },
+  { path: 'Code', component: CodeComponent, canActivate: [AuthGuard] },
+  { path: 'Gojo-Secret', component: GojoSecretComponent, canActivate: [AuthGuard] },
   { path: 'error404', component: NotFoundPageComponent },
+  { path: 'error404fun', component: Error404funComponent },
 
-  { path: '**', redirectTo: '/error404', pathMatch: 'full' },
+  { path: '**', redirectTo: `/${message}`, pathMatch: 'full' },
 ];
 
 @NgModule({

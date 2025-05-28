@@ -1,0 +1,18 @@
+<div id="page">
+    <div id="cont1" @slideInOut>
+      <div id="content1">
+
+<h1>Секретики</h1>
+<h2 *ngIf = "error">{{ error }}</h2>
+<input
+          type="text"
+          id="code"
+          [(ngModel)]="code"
+          placeholder="Пароль:"
+          autocomplete="off"
+          autocorrect="off"
+        />
+        <button (click)="enter()">Cекрет</button>
+        </div>
+    </div>
+</div>

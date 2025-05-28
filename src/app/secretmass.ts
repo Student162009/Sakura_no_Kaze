@@ -8,9 +8,9 @@ let nicknamemass = [
 ];
 
 let frazamass = [
-"Konichiwa! Sushi kudasai! Arigato! Mata ashita!",
+"Konnichiwa! Sushi to ocha kudasai! Arigato! Mata ashita!",
 "Черт ЕГО ШТЫРИТ... Это опасно!",
-"Поехали!(Ok let`s go!)",
+"Всё будет нормально. Иногда даже хорошо",
 "Это неизбежно - значит воспроизводимо",
 "Бывает и такое, что не бывает чего то"
 ];

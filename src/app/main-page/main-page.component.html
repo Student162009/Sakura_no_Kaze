@@ -11,7 +11,12 @@
 
 <div @PageAnimation>
 <div id="maincont">
-<h1>Добро пожаловать на "Sakura no Kaze"!</h1>
+<a
+    routerLink="/Code"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+   id="secret">Cекрет</a>
+   <h1>Добро пожаловать на "Sakura no Kaze"!</h1>
 
 <a routerLink = "/MangaPage"
     routerLinkActive = "active"
