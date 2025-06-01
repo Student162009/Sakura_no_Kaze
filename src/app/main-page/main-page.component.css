@@ -128,6 +128,15 @@ a{
     display: none;
     }
 
+    #secret{
+        background: none;
+        cursor: none;
+        text-decoration: none;
+        border: none;
+        animation: none;
+        color: #262626;
+    }
+
     #cont2 {
     display: none;
     }
