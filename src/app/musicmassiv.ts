@@ -32,7 +32,8 @@ const namesarr = [
     "IDOL",
     "Tokyo Autumn Session",
     "Ruler of my heart",
-    "AiScReam"
+    "AiScReam",
+    "Gonju"
 ];
 
 const authors = [
@@ -69,7 +70,8 @@ const authors = [
     "YOASOBI",
     "Jackie-O feat. Sabi-tyan",
     "Melody Note, Kirio",
-    "AiScReam"
+    "AiScReam",
+    "Yoasobi"
 ];
 
  const categorys = [
@@ -106,6 +108,7 @@ const authors = [
   "Песня",
   "Cover",
   "Cover",
+  "Песня",
   "Песня"
 ];
 export{
