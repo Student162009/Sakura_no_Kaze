@@ -35,6 +35,7 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
 import { Error404funComponent } from './error404fun/error404fun.component';
 import { CodeComponent } from './code/code.component';
 import { GojoSecretComponent } from './gojo-secret/gojo-secret.component';
+import { AnimesecretComponent } from './animesecret/animesecret.component';
 import { message } from './rand404';
 
 export const routes: Routes = [
@@ -84,6 +85,7 @@ export const routes: Routes = [
   { path: 'Anime19', component: Anime19Component, canActivate: [AuthGuard] },
   { path: 'Code', component: CodeComponent, canActivate: [AuthGuard] },
   { path: 'Gojo-Secret', component: GojoSecretComponent, canActivate: [AuthGuard] },
+  { path: 'UwU', component: AnimesecretComponent, canActivate: [AuthGuard] },
   { path: 'error404', component: NotFoundPageComponent },
   { path: 'error404fun', component: Error404funComponent },
 

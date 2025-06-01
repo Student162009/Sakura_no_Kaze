@@ -45,6 +45,8 @@ code = "";
       this.router.navigate(['/Gojo-Secret']);
     } else if(this.code == "thanks") {
       this.router.navigate(['/Secretik']);
+    }else if(this.code == "UwU") {
+      this.router.navigate(['/UwU']);
     }else {
       this.error = "Неверный код"
       console.log("Неверный код")
